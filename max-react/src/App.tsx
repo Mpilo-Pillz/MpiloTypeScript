@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import NewTodo from "./components/NewTodo";
+import Presentation from "./components/Presentation";
 import TodoList from "./components/TodoList";
 import { Todo } from "./todo.model";
 
@@ -24,6 +25,10 @@ function App() {
     <div className="App">
       <NewTodo onAddTodo={todoAddHandler} />
       <TodoList items={todos} onDeleteTodo={todoDeleteHandler} />
+      <Presentation color="orange">
+        Prop children
+        <hr />
+      </Presentation>
     </div>
   );
 }
