@@ -1,8 +1,9 @@
 interface SimpleChildPRops {
   color: string;
+  onClick: () => void;
 }
 
-const SimpleChild = ({ color }: SimpleChildPRops) => {
+const SimpleChild = ({ color, onClick }: SimpleChildPRops) => {
   return <div>{color}</div>;
 };
 
