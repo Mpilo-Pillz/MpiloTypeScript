@@ -8,3 +8,15 @@ const chooseStepFunctionAnother: (
 
   return backward ? stepBackward : stepForward;
 };
+
+let currentValueAnother = -20;
+const moveNearerToZeroAnother = chooseStepFunctionAnother(
+  currentValueAnother > 0
+);
+
+while (currentValueAnother !== 0) {
+  console.log(`${currentValueAnother}...`);
+  currentValueAnother = moveNearerToZeroAnother(currentValueAnother);
+}
+
+console.log("Zero");
