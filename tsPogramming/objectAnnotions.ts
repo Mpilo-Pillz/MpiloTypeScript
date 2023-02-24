@@ -10,4 +10,4 @@ const profile = {
     }
 }
 
-const {age} = profile;
+const {age}: {age: number} = profile;
