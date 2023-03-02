@@ -1,3 +1,7 @@
+interface Reportable {
+    summary(): string
+}
+
 const newLandCruiser = {
     name: 'Land Cruiser 300',
     year: new Date(),
@@ -15,3 +19,10 @@ const sparklingWater = {
         return `Sparkling water has ${this.sugar} grams of sugar`;
     }
 }
+
+const printSummary = (item: Reportable): void => {
+    console.log(item.summary());
+}
+
+printSummary(sparklingWater);
+printSummary(newLandCruiser);
