@@ -1,6 +1,13 @@
 interface Reportable {
+    // name: string; forces us to implementblank names for objects that dont need it
     summary(): string
 }
+
+interface Nameable {
+    name: string
+}
+
+
 
 const newLandCruiser = {
     name: 'Land Cruiser 300',
@@ -24,5 +31,11 @@ const printSummary = (item: Reportable): void => {
     console.log(item.summary());
 }
 
+const printName = (item: Nameable): void => {
+    console.log(item.name)
+}
+
 printSummary(sparklingWater);
+// printName(sparklingWater); // error does not have name
 printSummary(newLandCruiser);
+printName(newLandCruiser);
