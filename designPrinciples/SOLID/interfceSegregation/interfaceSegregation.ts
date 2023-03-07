@@ -14,7 +14,7 @@ const newLandCruiser = {
     year: new Date(),
     canBeADailyDriver: false,
     summary(): string {
-        return `The ${this.name} is not a daily driver`
+        return `The Toyota ${this.name} is not a daily driver`
     }
 }
 
@@ -39,3 +39,20 @@ printSummary(sparklingWater);
 // printName(sparklingWater); // error does not have name
 printSummary(newLandCruiser);
 printName(newLandCruiser);
+
+/**
+ * Classes 
+ * */ 
+
+class newLexusOffRoader implements Reportable, Nameable {
+name = 'LX 600';
+isOffRoadCapable = true
+
+summary(): string {
+    return `The Lexus ${this.name} can be taken off road`
+}
+}
+
+const myDreamCar = new newLexusOffRoader()
+
+printSummary(myDreamCar)
