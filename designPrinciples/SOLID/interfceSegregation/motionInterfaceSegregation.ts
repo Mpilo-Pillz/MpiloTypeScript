@@ -36,7 +36,7 @@ class Penguin extends Bird implements CanSwim {
 const whale = {
     breathesUnderWater: false,
     givesBirth() {
-        return `A very tiny adorable whales now exists`
+        return `A very tiny adorable whale now exists`
     },
     swim() {
         return `Stays under water for a very long time`
@@ -46,10 +46,13 @@ const whale = {
 const nkhuku = new Chicken();
 const liDada = new Penguin();
 
+liDada.isFemale = true;
+liDada.laysEggs()
+
 const swimmingShow = (creature: CanSwim) => {
     console.log(creature.swim())
 }
 
 swimmingShow(liDada)
 swimmingShow(whale)
-// swimmingShow(nkhuku) throws error chickens dont swim
+// swimmingShow(nkhuku) throws error chickens don't swim
