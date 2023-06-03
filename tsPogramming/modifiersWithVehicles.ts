@@ -15,11 +15,15 @@ class Car extends Vehicle {
 
     private moveFuelToEngine() {
         console.log("Fuel moved form fuel tank to engine");
-        
+    }
+
+    public startEngine() {
+        this.moveFuelToEngine()
     }
 }
 
 const car = new Car();
 // car.moveFuelToEngine(); // private can't be accessed outside the class. only methods inside the class can call drive
+car.startEngine()
 car.drive(); 
 car.honk();
