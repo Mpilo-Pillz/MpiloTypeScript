@@ -13,3 +13,8 @@ the order to be fixed, eg our order should be string, number, boolean and don't 
 
 ### when to use
 Working with CSVs is a good use case to use Tuples eg to represent the rows. First see if you cant use a object instead because it is more descriptive.
+
+### Modifiers
+<strong>public</strong> Can be called anywhere anytime
+<strong>private</strong> Can only be called by other methods in the same class
+<strong>protected</strong> Can be called by others methods in the same class or by other methods in child classes
