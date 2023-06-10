@@ -6,6 +6,8 @@ class Vehicle {
   constructor(color: string) {
     this.color = color;
   }
+// short syntax
+//   constructor(public color: string) {}
 
   public drive(): void {
     console.log("chugga chugga");
