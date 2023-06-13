@@ -18,3 +18,7 @@ Working with CSVs is a good use case to use Tuples eg to represent the rows. Fir
 <strong>public</strong> Can be called anywhere anytime
 <strong>private</strong> Can only be called by other methods in the same class
 <strong>protected</strong> Can be called by others methods in the same class or by other methods in child classes
+
+
+### run parcel
+`parcel index.html` or `npx parcel index.html`
