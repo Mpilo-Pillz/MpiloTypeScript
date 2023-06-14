@@ -22,3 +22,7 @@ Working with CSVs is a good use case to use Tuples eg to represent the rows. Fir
 
 ### run parcel
 `parcel index.html` or `npx parcel index.html`
+
+
+### some naming conventions
+- when we have a file whose primiary purpose is create and export a class use propper case to name the file
