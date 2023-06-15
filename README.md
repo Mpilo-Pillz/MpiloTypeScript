@@ -26,3 +26,4 @@ Working with CSVs is a good use case to use Tuples eg to represent the rows. Fir
 
 ### some naming conventions
 - when we have a file whose primiary purpose is create and export a class use propper case to name the file
+- files that export plain objects, constants or functions or files that are the root o the application will be lowercase
