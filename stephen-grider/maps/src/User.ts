@@ -8,6 +8,6 @@ class User {
     }
 
     constructor() {
-
+        this.name = faker.person.firstName()
     }
 }
