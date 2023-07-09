@@ -13,6 +13,9 @@ class User {
         console.log("undefined bcuase location is null -->", this.location);
         this.location.lng = 34;
         
-        
+        this.location = {
+            lat: faker.location.latitude(),
+            lng: faker.location.longitude()
+        }
     }
 }
