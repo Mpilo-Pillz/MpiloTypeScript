@@ -4,3 +4,5 @@ console.log("Not hello world");
 
 const user = new User()
 
+console.log(user);
+
