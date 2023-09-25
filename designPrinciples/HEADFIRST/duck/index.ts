@@ -1,10 +1,12 @@
 import { Duck } from "./duck";
-import { Mallard } from "./mallard";
-import { RubberDuck } from "./rubberDuck";
+import { MachanicalDuck } from "./ducks/machanicalDuck";
+import { Mallard } from "./ducks/mallard";
+import { RubberDuck } from "./ducks/rubberDuck";
 
 class DuckSimulator {
   mallard: Duck = new Mallard();
   rubberDuck: Duck = new RubberDuck();
+  roboDuck: Duck = new MachanicalDuck();
 
   run() {
     this.mallard.performFly();
@@ -13,6 +15,10 @@ class DuckSimulator {
     console.log("another duck");
     this.rubberDuck.performFly();
     this.rubberDuck.performQuack();
+
+    console.log("another duck");
+    this.roboDuck.performQuack();
+    this.roboDuck.performFly();
   }
 }
 
