@@ -39,3 +39,15 @@ function steps(num: number) {
 }
 
 steps(5);
+
+function modernStep(num: number) {
+  for (let row = 0; row < num; row++) {
+    let stair = "";
+    for (let column = 0; column < num; column++) {
+      column <= row ? (stair += "#") : (stair += " ");
+    }
+    console.log(stair);
+  }
+}
+
+modernStep(13);
