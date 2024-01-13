@@ -44,7 +44,8 @@ function modernStep(num: number) {
   for (let row = 0; row < num; row++) {
     let stair = "";
     for (let column = 0; column < num; column++) {
-      column <= row ? (stair += "#") : (stair += " ");
+      //   column <= row ? (stair += "#") : (stair += " ");
+      stair += column <= row ? "#" : " ";
     }
     console.log(stair);
   }
