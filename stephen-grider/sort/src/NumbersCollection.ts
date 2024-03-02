@@ -22,4 +22,4 @@ export class NumbersCollection extends Sorter {
 }
 
 const collection = new NumbersCollection([1, 2, 3]);
-console.log(collection.length);
+// console.log(collection.length);
