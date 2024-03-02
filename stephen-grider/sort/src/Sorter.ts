@@ -1,3 +1,8 @@
+/**
+ * Interfaces do nothign to ensure that the methods are implemented correctly
+ * and esure that the right functionality is performed
+ * They just made sure that the methods exists and ensure that they have the appropriate types
+ * */
 export interface Sortable {
   length: number;
   compare(leftIndex: number, rightIndex: number): boolean;
