@@ -6,7 +6,7 @@ import { Sorter } from "./Sorter";
 const numbersCollection = new NumbersCollection([-18, 14, -11, 5]);
 numbersCollection.sort();
 // const sorter = new Sorter(numbersCollection); now an abstract class, abstract classes do not create objects
-// sorter.sort();
+// sorter.sort(); // it was cumbersome to have to keep remeberting to call sort
 // console.log(numbersCollection.data);
 console.log("-------------------------CHARACTERS----------------------------");
 const charactersCollection = new CharaterCollection("Mpilo");
