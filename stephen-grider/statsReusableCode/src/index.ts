@@ -11,6 +11,7 @@ const matchReader = new MatchReader(csvFileReader);
 matchReader.load();
 
 // const summary = new Summary(new WinsAnalysis("West Ham"), new ConsoleReport());
-const summary = new Summary(new WinsAnalysis("West Ham"), new HtmlReport());
+// const summary = new Summary(new WinsAnalysis("West Ham"), new HtmlReport());
+const summary = Summary.winsAnalysisWithHTMLReport("Man Utd");
 
 summary.buildAndPrintReport(matchReader.matches);
