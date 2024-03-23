@@ -1,3 +1,4 @@
+import { log } from "console";
 import { MatchData } from "../MatchData";
 import { Analyzer } from "../Summary";
 import { MatchResult } from "../matchResult";
@@ -7,7 +8,7 @@ export class WinsAnalysis implements Analyzer {
 
   run(matches: MatchData[]): string {
     let wins = 0;
-
+    console.log("INT-->", matches);
     for (let match of matches) {
       if (match[1] === "Man United" && match[5] === MatchResult.HomeWin) {
         wins++;

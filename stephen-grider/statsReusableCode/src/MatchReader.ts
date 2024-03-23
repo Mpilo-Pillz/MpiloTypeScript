@@ -10,6 +10,8 @@ export interface DataReader {
 
 export class MatchReader {
   static fromCsv(filename: string): MatchReader {
+    console.log("CVS-->", filename);
+
     return new MatchReader(new CsvFileReader(filename));
   }
   matches: MatchData[] = [];
