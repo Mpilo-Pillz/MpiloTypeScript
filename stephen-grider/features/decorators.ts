@@ -11,6 +11,11 @@ class Boat {
   }
 
   @logError
+  pilotNotReusable(): void {
+    throw new Error();
+  }
+
+  @logReusableError("Oh no, the boat was sunk in the ociean")
   pilot(): void {
     throw new Error();
   }
@@ -30,6 +35,20 @@ function logError(target: any, key: string, desc: PropertyDescriptor) {
     } catch (e) {
       console.log("Oops, the boat was sunk");
     }
+  };
+}
+
+function logReusableError(errorMessage: string) {
+  return function logError(target: any, key: string, desc: PropertyDescriptor) {
+    const method = desc.value;
+
+    desc.value = function () {
+      try {
+        method();
+      } catch (e) {
+        console.log(errorMessage);
+      }
+    };
   };
 }
 
